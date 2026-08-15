@@ -11,7 +11,7 @@ The problem: Finding the highest (Maximum) number from a given list of numbers.
 
 
 | PseudoCode 1 | PseudoCode 2 |
-
+| ----------- | ----------- |
 | Algorithm FindMax1(numbers) | Algorithm FindMax2(numbers) |
 
 |  max ← numbers[0] |    For i from 0 to length(numbers)-1bigger ← true |
