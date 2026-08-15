@@ -13,26 +13,19 @@ The problem: Finding the highest (Maximum) number from a given list of numbers.
 | PseudoCode 1 | PseudoCode 2 |
 | ----------- | ----------- |
 | Algorithm FindMax1(numbers) | Algorithm FindMax2(numbers) |
-
 |  max ← numbers[0] |    For i from 0 to length(numbers)-1bigger ← true |
-
 |  For i from 1 to length(numbers)-1 |       For j from 0 to length(numbers)-1 |
-
 |     If numbers[i] > max Then |          If numbers[j] > numbers[i] Then |
-
 |        max ← numbers[i] |           bigger ← false |
-
 |     EndIf |          EndIf |
-
 |  EndFor |       EndFor |
-
 |   Return max |       If bigger = true Then |
-
 | EndAlgorithm |        Return numbers[i] |
 |  |     EndIf |
 |  |    EndFor |
 |  | EndAlgorithm |
 | ----------- | ----------- |
+
 Algorithm FindMax2(numbers)
 
    For i from 0 to length(numbers)-1bigger ← true
