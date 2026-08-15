@@ -1,5 +1,5 @@
 # Section: 9 - Pinatubo                                 Score:____________
-# C# / Name: #16 Umayan, #17 Aguilar, #18 Atencio       Date: 08/15/2026
+# C# / Name: #18 Atencio       Date: 08/15/2026
 
 birth_year = int(input("Enter your birth year: "))
 zodiac_animals = ["Monkey (猴 / Hóu)", "Rooster (鸡 / Jī)", "Dog (狗 / Gǒu)", "Pig (猪 / Zhū)", "Rat (鼠 / Shǔ)", "Ox (牛 / Niú)", 
