@@ -5,8 +5,8 @@ birth_year = int(input("Enter your birth year: "))
 zodiac_animals = ["Monkey (猴 / Hóu)", "Rooster (鸡 / Jī)", "Dog (狗 / Gǒu)", "Pig (猪 / Zhū)", "Rat (鼠 / Shǔ)", "Ox (牛 / Niú)", 
                   "Tiger (虎 / Hǔ)", "Rabbit (兔 / Tù)", "Dragon (龙 / Lóng)", "Snake (蛇 / Shé)", "Horse (马 / Mǎ)", "Goat (羊 / Yáng)"]
 def get_zodiac(birth_year, zodiac_animals):
-  index = int(birth_year%12)
-  Chinese_zodiac = zodiac_animals[index]
+  zodiac_index = int(birth_year%12)
+  Chinese_zodiac = zodiac_animals[zodiac_index]
   return Chinese_zodiac
 
 if birth_year >= 1900:
