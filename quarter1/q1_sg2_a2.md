@@ -32,7 +32,7 @@ The problem: Finding the highest (Maximum) number from a given list of numbers.
 |  |     EndIf |
 |  |    EndFor |
 |  | EndAlgorithm |
-
+| ----------- | ----------- |
 Algorithm FindMax2(numbers)
 
    For i from 0 to length(numbers)-1bigger ← true
