@@ -2,7 +2,7 @@
 ## Code Quality Assessment Worksheet
 
 ### Section: 9 - Pinatubo                                 Score:____________
-### C# / Name: #16 Umayan, #17 Aguilar, #18 Atencio       Date: _____________
+### C# / Name: #16 Umayan, #17 Aguilar, #18 Atencio       Date: 08/15/2026
 
 
 Instructions:
@@ -10,29 +10,28 @@ Instructions:
 The problem: Finding the highest (Maximum) number from a given list of numbers.
 
 
-PseudoCode 1
+| PseudoCode 1 | PseudoCode 2 |
 
-PseudoCode 2
+| Algorithm FindMax1(numbers) | Algorithm FindMax2(numbers) |
 
-Algorithm FindMax1(numbers)
+|  max ← numbers[0] |    For i from 0 to length(numbers)-1bigger ← true |
 
-   max ← numbers[0]
+|  For i from 1 to length(numbers)-1 |       For j from 0 to length(numbers)-1 |
 
-   For i from 1 to length(numbers)-1
+|     If numbers[i] > max Then |          If numbers[j] > numbers[i] Then |
 
-      If numbers[i] > max Then
+|        max ← numbers[i] |           bigger ← false |
 
-         max ← numbers[i]
+|     EndIf |          EndIf |
 
-      EndIf
+|  EndFor |       EndFor |
 
-   EndFor
+|   Return max |       If bigger = true Then |
 
-   Return max
-
-EndAlgorithm
-
-
+| EndAlgorithm |        Return numbers[i] |
+|  |     EndIf |
+|  |    EndFor |
+|  | EndAlgorithm |
 
 Algorithm FindMax2(numbers)
 
