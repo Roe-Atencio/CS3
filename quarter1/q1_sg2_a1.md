@@ -1,9 +1,9 @@
 # Annex A
 ## Computational Thinking Exercise: "Smart School Canteen Queue"
 
-### Section: Pinatubo                                         Score:____________
+### Section: Pinatubo                                          Score:____________
 
-### C# / Name: #16 Umayan, #17 Aguilar, #18 Atencio Date:     August 13, 2026
+### C# / Name: #16 Umayan, #17 Aguilar, #18 Atencio            Date: August 13, 2026
 
 
 Scenario
