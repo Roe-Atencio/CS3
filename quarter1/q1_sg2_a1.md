@@ -1,9 +1,9 @@
-# Annex A
-## Computational Thinking Exercise: "Smart School Canteen Queue"
+Annex A
+Computational Thinking Exercise: "Smart School Canteen Queue"
 
-### Section: Pinatubo                                          Score:____________
+Section: Pinatubo                                         Score:____________
 
-### C# / Name: #16 Umayan, #17 Aguilar, #18 Atencio            Date: August 13, 2026
+C# / Name: #16 Umayan, #17 Aguilar, #19 Atencio Date:     August 13, 2026
 
 
 Scenario
@@ -31,10 +31,42 @@ Please list possible sub-problems:
 Step 3: Define Computational Thinking Approaches
 For each sub-problem, apply CT skills:
 
-| Sub-Problem | CT Skill | Example Solution |
-| -------------------- | -------- | ---------------- |
-| Slow decision-making | -------- | ---------------- |
-| Manual calculation   | -------- | ---------------- |
-| Untracked inventory  | -------- | ---------------- |
+| Sub-Problem          | CT Skill            | Example Solution                                                                    |
+| -------------------- | ------------------- | ----------------------------------------------------------------------------------- |
+| Slow decision-making | Abstraction         | Display a simple menu with only the pictures, names, and prices of meals available. |
+| Manual calculation   | Algorithm           | Make a system that automatically gets the total price of the customer's             |
+|                      |                     | order and calculate the exact change when payment is given.                         |
+| Untracked inventory  | Pattern Recognition | Analyze data to predict high-demand items and use a stock counter to notify servers |
+|                      |                     | when a certain item is low on stock.                                                |
 
- Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
+Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
+
+Sub-problem 2 pseudocode:
+
+(this code only works if there is one item [itemname] on the menu)
+DECLARE itemname : STRING
+DECLARE order : STRING
+DECLARE menuitem : STRING
+DECLARE itemprice : INTEGER
+DECLARE total : INTEGER
+
+itemname = <item>
+itemprice = <price>
+
+total = 0
+order = yes
+
+WHILE order = yes
+  OUTPUT "Enter the name of the item: "
+  INPUT menuitem
+  IF menuitem = itemname THEN
+    total = total + itemprice
+    OUTPUT "Successfully added ", menuitem, " to your order!"
+  ELSE
+    OUTPUT "Sorry, item not recognized."
+  ENDIF
+  OUTPUT "Add an item to your order? (yes/no): "
+  INPUT order
+ENDWHILE
+
+OUTPUT "Your total is ₱", total
