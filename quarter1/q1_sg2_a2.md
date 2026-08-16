@@ -71,7 +71,7 @@ Checklist to guide your answer:
 4. Testability
 Which algorithm is easier to test with different inputs? Why?
 
-Algorithm 1 is easier to test with different inputs because it's simple structure means that you can ... patuloy po thx
+Algorithm 1 is easier to test with different inputs because it's simple structure means that you can  easily test with different kinds of small datasets and predict possible outputs because of the simple logic used.
 
 Checklist to guide your answer:
 | PseudoCode 1                                            | Pseudocode 2                                            |
