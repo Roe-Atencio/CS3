@@ -110,7 +110,7 @@ Checklist to guide your answer:
 
 | PseudoCode 1 | PseudoCode 2 |
 | ----------- | ----------- |
-| - [ ] Does the algorithm check if the list is empty? | - [ ] Does the algorithm check if the list is empty? |
+| [ ] Does the algorithm check if the list is empty? | - [ ] Does the algorithm check if the list is empty? |
 | - [ ] Does it handle invalid inputs (like letters instead of numbers)? | - [ ] Does it handle invalid inputs (like letters instead of numbers)? |
 | - [ ] Does it avoid crashing when inputs are unusual? | - [ ] Does it avoid crashing when inputs are unusual? |
 
