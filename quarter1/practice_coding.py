@@ -11,7 +11,6 @@ for i in range(5):
   name = input("Enter product name: ")
   price = float(input("Enter price of product: "))
   name = Product(name, price)
-  name.product_details()
   Products.append(name)
 
 print(Products)
