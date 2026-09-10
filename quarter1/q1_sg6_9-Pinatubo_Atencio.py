@@ -8,7 +8,7 @@ class Lab:
 class Technician:
   def __init__(self, name):
     self.name = name
-  def assigned_lab(self, lab_obj):
+  def assign_lab(self, lab_obj):
     self.assigned_lab = lab_obj
 
 chem_lab = Lab("302")
