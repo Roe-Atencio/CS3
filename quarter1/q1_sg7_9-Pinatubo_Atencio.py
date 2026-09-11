@@ -23,7 +23,7 @@ class Tray:
         self.beakers = beakers
 
     def __del__(self):
-        print(f"Now I am become Death, the destroyer of trays.")
+        print(f"OH NO!! {self.name} fell on the floor! That's so tragic...")
         self.beakers = []
 
 beaker_list = [Beaker("Beaker 1", "Beaker", 10),
