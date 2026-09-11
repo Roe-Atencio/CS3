@@ -8,7 +8,7 @@ class Glassware:
         print(f"{name} removed from cabinet.")
 
     def __del__(self):
-        print(f"{self.name} shattered on the floor.")
+        print(f"{self.name} has been lost to the floor.")
 
 class Beaker(Glassware):
     def __init__(self, name, glassware_type, volume):
@@ -23,7 +23,7 @@ class Tray:
         self.beakers = beakers
 
     def __del__(self):
-        print(f"{self.name} accidentally fell on the floor.")
+        print(f"Now I am become Death, the destroyer of trays.")
         self.beakers = []
 
 beaker_list = [Beaker("Beaker 1", "Beaker", 10),
