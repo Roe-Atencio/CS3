@@ -2,7 +2,7 @@
 #18 Caliyah Roe L. Atencio
 9-Pinatubo
 
-FA1: 
+FA1: https://github.com/Roe-Atencio/CS3/blob/main/quarter1/q1_sg2_a1.md
 FA2: 
 FA3: 
 FA4: 
