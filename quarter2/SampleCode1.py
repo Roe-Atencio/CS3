@@ -1,0 +1,16 @@
+class Student:
+    __name: str
+    __age = 0
+    def __init__(self,name,age):
+        self.__name = name
+    def set_age(self, age):
+        if age > 0:
+            self.__age = age
+    def get_age(self):
+        return self.__age
+
+student1 = Student("Josef",15)
+student1.set_age(-16)
+print("Student age: ",student1.get_age())
+student1.set_age(16)
+print("Student age: ",student1.get_age())
