@@ -1,20 +1,56 @@
 class Publication:
-  __title: str
-  __author: str
-  def __init__(self, title, author):
+    __title: str
+    __author: str
+    def __init__(self, title, author):
       self.__title = title
       self.__author = author
-    def set_title(self):
-      print(self.name, "is eating.")
-    def set_author(self):
-      print(self.name, "is sleeping.")
+    def set_title(self, title):
+      self.__title = title
+    def set_author(self, author):
+      self.__author = author
     def get_title(self):
       return self.__title
     def get_author(self):
       return self.__author
+    def display_info(self):
+      print(f"Title: {self.__title}\nAuthor: {self.__author}")
 
 class Book(Publication):
-  pass
+    __title: str
+    __author: str
+    __number_of_pages = 0
+    def __init__(self, title, author, number_of_pages):
+      super(). __init__(title, author)
+    def set_number_of_pages(self, number_of_pages):
+      if number_of_pages > 0:
+        self.__number_of_pages = number_of_pages
+    def get_number_of_pages(self):
+      return self.__number_of_pages
+    def display_info(self):
+      super().display_info()
 
 class Magazine(Publication):
-  pass 
+    __title: str
+    __author: str
+    __issue_number = 0
+    def __init__(self, title, author, issue_number):
+      super(). __init__(title, author)
+    def set_issue_number(self, issue_number):
+      if issue_number > 0:
+        self.__issue_number = issue_number
+    def get_issue_number(self):
+      return self.__issue_number
+    def display_info(self):
+      super().display_info()
+
+pub1 = Publication("Journal of Experimental Psychology", "Ratchiff, R. & Van Dongen, H.")
+book1 = Book("The Hobbit", "J.R.R. Tolkien", 310)
+mag1 = Magazine("National Geograhic", "Various Authors", 202)
+print("Publication Information:")
+pub1.display_info()
+print("Book Information:")
+book1.display_info()
+print(f"Number of Pages: {book1.get_number_of_pages()}")
+print("Magazine Information:")
+mag1.display_info()
+print(f"Issue Number: {mag1.get_issue_number()}")
