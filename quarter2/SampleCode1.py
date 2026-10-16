@@ -8,9 +8,16 @@ class Student:
             self.__age = age
     def get_age(self):
         return self.__age
+    def get_name(self):
+        return self.__name
+    def greet(self):
+        return f"Hi! My name is {self.__name}."
+    def set_name(self):
+        self.__name = name
 
 student1 = Student("Josef",15)
 student1.set_age(-16)
 print("Student age: ",student1.get_age())
 student1.set_age(16)
 print("Student age: ",student1.get_age())
+student1.greet()
