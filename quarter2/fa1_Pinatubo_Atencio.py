@@ -9,9 +9,9 @@ class Publication:
     def set_author(self, author):
         self.__author = author
     def get_title(self):
-        return self._title
+        return self.__title
     def get_author(self):
-        return self._author
+        return self.__author
     def display_info(self):
         print(f"Title: {self.__title}\nAuthor: {self.__author}")
 
