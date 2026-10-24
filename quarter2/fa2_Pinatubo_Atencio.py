@@ -14,19 +14,15 @@ class Patient:
             self.__bill_amount = bill_amount
         else:
             print("Invalid Input! Please enter a positive number.")
-    def get_bill_amount(self):
+    def get_bill_amount(self) -> float:
         return self.__bill_amount
-    def calculate_bill(self):
+    def calculate_bill(self) -> float:
         return self.get_bill_amount()
 
 class SeniorPatient(Patient):
-    __name: str
-    __bill_amount: float
-    def calculate_bill(self):
+    def calculate_bill(self) -> float:
         return self.get_bill_amount() * 0.80
 
 class PhilHealthPatient(Patient):
-    __name: str
-    __bill_amount: float
-    def calculate_bill(self):
+    def calculate_bill(self) -> float:
         return self.get_bill_amount() * 0.85
